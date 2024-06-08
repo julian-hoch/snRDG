@@ -1,8 +1,7 @@
 #+TITLE:   snRDG
 #+OPTIONS: toc:2
 
-* snRDG
-Generate Row Data Gateways[^1] for ServiceNow Tables.
+Generate Row Data Gateways[1] for ServiceNow Tables.
 
 * Prerequisites
 - Node.js (>= 12.x.x)
@@ -34,7 +33,7 @@ Generate Row Data Gateways[^1] for ServiceNow Tables.
    Import the provided update set XML into your ServiceNow instance.
 
 5. Configure API Key
-Create an API key in your ServiceNow instance and assign it to the REST API[^3].
+Create an API key in your ServiceNow instance and assign it to the REST API[2].
 
 * Usage
 
@@ -79,7 +78,7 @@ snrdg generate incident IncidentGateway
 The project consists of three main parts:
 
 ** ServiceNow Application
-The ServiceNow application is responsible for compiling the metadata of the table and provides a REST API to access the schema information. It is secured via an API key[^2].
+The ServiceNow application is responsible for compiling the metadata of the table and provides a REST API to access the schema information. It is secured via an API key[3].
 
 The installation can be installed using the provided update set XML. The source is also included in this GIT repository for convenience.
 
@@ -95,11 +94,12 @@ The template for generating the classes is located in the =/templates= directory
 Feel free to submit issues or pull requests. Any help is greatly appreciated!
 
 * License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
 
 * Authors
 Developed by Julian Hoch.
 
-[^1]: See: [[https://martinfowler.com/eaaCatalog/rowDataGateway.html][P of EAA: Row Data Gateway]]
-[^2]: See: [[https://docs.servicenow.com/bundle/washingtondc-platform-security/page/product/credentials/reference/API-key-credential-form.html][Product Documentation | ServiceNow | API key credentials]]
-[^3]: The application includes a dummy API key you can adjust. See [[https://www.servicenow.com/community/developer-advocate-blog/inbound-rest-api-keys/ba-p/2854924][Inbound REST API Keys - ServiceNow Community]] for a detailed guide on how to use API keys in ServiceNow.
+* Footnotes
+- [1]: See: [[https://martinfowler.com/eaaCatalog/rowDataGateway.html][P of EAA: Row Data Gateway]]
+- [2]: The application includes a dummy API key you can adjust. See [[https://www.servicenow.com/community/developer-advocate-blog/inbound-rest-api-keys/ba-p/2854924][Inbound REST API Keys - ServiceNow Community]] for a detailed guide on how to use API keys in ServiceNow.
+- [3]: See: [[https://docs.servicenow.com/bundle/washingtondc-platform-security/page/product/credentials/reference/API-key-credential-form.html][Product Documentation | ServiceNow | API key credentials]]
