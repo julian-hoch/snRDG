@@ -1,0 +1,24 @@
+{
+    "extends": "@tsconfig/node17/tsconfig.json",
+    "include": [
+        "src/**/*.ts",
+        "sn_openapi/**/*.ts",
+        "testing/**/*.ts",
+        "jest/**/*.ts"
+    ],
+    "compilerOptions": {
+        "outDir": "bin",
+        "sourceMap": true,
+        "module": "node16",
+        "moduleResolution": "node16",
+        "esModuleInterop": true,
+	"allowSyntheticDefaultImports": true,
+        "strict": false,
+	"plugins": [
+	    { "name": "typescript-eslint-language-service" }
+	]
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Recommended",
+    "module": "es2020"
+}

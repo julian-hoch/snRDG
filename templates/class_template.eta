@@ -1,0 +1,349 @@
+/* eslint-disable global-require, dot-notation */
+if (typeof require === 'function') {
+    const GlideRecord = require('../../../tests/jest/__stubs__/GlideRecord');
+    const GlideDateTime = require('../../../tests/jest/__stubs__/GlideDateTime');
+    globalThis.GlideRecord = GlideRecord; /* global GlideRecord */
+    globalThis.GlideDateTime = GlideDateTime; /* global GlideDateTime */
+}
+
+<% it.choiceTypes.forEach(function(ct) {%>
+/** 
+ * @typedef { <%= ct.choicesQuoted.join(' | ') %> } <%= ct.choiceLabel %> 
+ */
+ 
+<% }); %>
+
+/**
+ * This class has been automatically generated based
+ * on the table schema of the table '<%= it.tableName %>'.
+ * It represents the table as a row data gateway.
+ * 
+ * It should not be changed manually, but either inherited
+ * from or referenced via composition.
+ */
+class <%= it.className %> {
+
+    //
+    // Table Properties
+    //
+
+<% it.columns.forEach(function(col) {%>
+    /** 
+     * <%= col.column_label %> 
+     * 
+     * Field Name: <%= col.element %> 
+     * Base Table: <%= col.table %> 
+     * Type: <%= col.internal_type %> 
+     * 
+     * @type {<%= col.jsType %><% 
+        if (col.jsType !== 'sys_id' && 
+            col.jsType !== 'boolean' &&
+            (col.type !== 'choice' || !col.default)) {
+        %> | undefined<%
+        }%>} 
+     */
+    <%= col.element %><% 
+        if (col.jsType === 'sys_id') {%> = '-1'<%}
+        if (col.jsType === 'boolean') {%> = false<%}
+        if (col.type === 'choice' && col.default_value) {%> = '<%= col.default_value %>'<%}
+    %>;
+
+<% }); %>
+
+    //
+    // Local state
+    //
+
+    /** 
+     * In case we load from a GlideRecord or store to one,
+     * we keep a reference to it here.
+     *
+     * @type {GlideRecord | undefined} 
+     */
+    _gr;
+
+    /** 
+    * This property is necessary so we can properly
+    * serialize and deserialize class instances.
+    *
+    * @type {string} 
+    */
+    _type = '<%= it.className %>';
+
+    //
+    // Metadata
+    //
+
+    /** @type {InstanceTableNames} */
+    static tableName = '<%= it.tableName %>';
+
+    /**
+     * By default, an active record constructor simply
+     * reads out the fields from a given GlideRecord
+     * and assigns them to the instance properties.
+     *
+     * If you don't pass in a GlideRecord, the constructor
+     * will create an empty object.
+     *
+     * @param {GlideRecord?} [gr] GlideRecord for table '<%= it.tableName %>'
+     */
+    constructor(gr) {
+        if (typeof gr?.isValidRecord !== 'function' || !gr?.isValidRecord() || !gr?.sys_id) {
+            return;
+        }
+
+        this._gr = gr;
+
+<% it.columns.forEach(function(col) {%>
+        this.<%= col.element %> = <%= col.valueGetter %>;
+<%}); %>
+    }
+
+    //
+    // Getter (single record)
+    //
+
+    /**
+     * Retrieves a single record from the database based on the sys_id.
+     * If no record is found, it will return undefined.
+     *
+     * @param {sys_id} sys_id the sys_id of the record
+     * @returns {<%= it.className %> | undefined} the record or undefined
+     */
+    static get(sys_id) {
+        const gr = new GlideRecord(this.tableName);
+        if (!gr.get(sys_id)) {
+            return undefined;
+        }
+
+        // return new instance of the correct subclass
+        return new this(gr);
+    }
+
+    //
+    // Finders (single record)
+    //
+
+    /**
+     * Generic retrieval of records based on a query. Will
+     * return the first matching record, or undefined if
+     * no matching record was found.
+     * 
+     * @param {encoded_query} query additional query to filter the result
+     * @returns {<%= it.className %> | undefined} the first matching record, or undefined if not found
+     */
+    static find(query) {
+        const gr = new GlideRecord(this.tableName);
+        gr.addEncodedQuery(query);
+        gr.query();
+        gr.setLimit(1);
+
+        if (!gr.next()) {
+            return undefined;
+        }
+
+        // return new instance of the correct subclass
+        return new this(gr);
+    }
+    
+    <% it.columns.forEach(function(col) {%>
+/**
+     * Generic retrieval of records based on a query. Will
+     * return the first matching record, or undefined if
+     * no matching record was found.
+     * 
+     * @param {<%= col.jsType %>} value lookup value for <%= col.name %> 
+     * @param {encoded_query?} [query] additional query to filter the result
+     * @returns {<%= it.className %> | undefined} the first matching record, or undefined if not found
+     */
+    static findBy<%= col.camelizedName %>(value, query) {
+        const gr = new GlideRecord(this.tableName);
+        gr.addQuery('<%= col.element %>', value.toString());
+        if (query) {
+            gr.addEncodedQuery(query);
+        }
+        gr.query();
+        gr.setLimit(1);
+
+        if (!gr.next()) {
+            return undefined;
+        }
+
+        // return new instance of the correct subclass
+        return new this(gr);
+    }
+
+    <%}); %>
+
+    //
+    // Finders (multiple records)
+    //
+
+    /**
+     * Generic retrieval of records based on a query. Will
+     * return all matching records as array.
+     * 
+     * @param {encoded_query} query additional query to filter the result
+     * @returns {<%= it.className %>[]} all matching records
+     */
+    static findAll(query) {
+        const gr = new GlideRecord(this.tableName);
+        gr.addEncodedQuery(query);
+        gr.query();
+
+        const result = [];
+
+        while (gr.next()) {
+            const instance = new this(gr);
+            result.push(instance);
+        }
+
+        // return new instances
+        return result;
+    }
+
+        <% it.columns.forEach(function(col) {%>
+/**
+     * Generic retrieval of records based on a query. Will
+     * return all records as array.
+     * 
+     * @param {<%= col.jsType %>} value lookup value for <%= col.name %> 
+     * @param {encoded_query?} [query] additional query to filter the result
+     * @returns {<%= it.className %>[]} the first matching record, or undefined if not found
+     */
+    static findAllBy<%= col.camelizedName %>(value, query) {
+        const gr = new GlideRecord(this.tableName);
+        gr.addQuery('<%= col.element %>', value.toString());
+        if (query) {
+            gr.addEncodedQuery(query);
+        }
+        gr.query();
+
+        const result = [];
+
+        while (gr.next()) {
+            const instance = new this(gr);
+            result.push(instance);
+        }
+
+        // return new instances
+        return result;
+    }
+
+    <%}); %>
+
+    //
+    // CRUD Methods
+    //
+
+    /**
+     * Inserts the record into the database.
+     * If the record is already stored in the database,
+     * an error will be thrown (if this is needed, use
+     * a separate duplicate() function).
+     *
+     * @returns {<%= it.className %>} the instance itself
+     */
+    insert() {
+        if (this._gr?.isValidRecord()) {
+            throw new Error('Cannot insert: already stored in database');
+        }
+
+        const gr = new GlideRecord(<%= it.className %>.tableName);
+        gr.newRecord();
+        <% it.columns.filter((col) => !col.element.startsWith('sys')).forEach(function(col) {%>
+gr['<%= col.element %>'] = <%= col.valueSetter %>;
+        <%}); %>
+
+        const id = gr.insert();
+
+        if (!id) {
+            throw new Error('<%= it.className %>.insert(): Could not insert record');
+        }
+
+        this._gr = gr;
+        this.sys_id = id;
+
+        return this;
+    }
+
+    /**
+     * Updates the record in the database.
+     * If the record is not stored in the database,
+     * an error will be thrown.
+     *
+     * @param {string} [reason] the reason for the update
+     * @returns {<%= it.className %>} the instance itself
+     */
+    update(reason) {
+        if (!this._gr?.isValidRecord()) {
+            throw new Error('<%= it.className %>.update(): record not stored in database');
+        }
+
+        const gr = this._gr;
+
+        <% it.columns.filter((col) => !col.element.startsWith('sys')).forEach(function(col) {%>
+gr['<%= col.element %>'] = <%= col.valueSetter %>;
+        <%}); %>
+
+        const success = gr.update(reason);
+
+        if (!success) {
+            throw new Error('<%= it.className %>.update(): record ' + this.sys_id + 
+            ' could not be updated');
+        }
+
+        return this;
+    }
+
+    /**
+     * Deletes the record in the database.
+     * If the record is not stored in the database,
+     * an error will be thrown.
+     *
+     * @returns {boolean} whether the deletion  was successful
+     */
+    deleteRecord() {
+        if (!this._gr?.isValidRecord()) {
+            throw new Error('<%= it.className %>.delete(): record not stored in database');
+        }
+
+        return this._gr.deleteRecord();
+    }
+
+    //
+    // Helper functions
+    //
+
+    /**
+     * Converts seconds to a Unix timestamp.
+     *
+     * @param {number} s number of seconds (since epoch)
+     * @returns {GlideDateTime} the corresponding GlideDateTime
+     */
+    static _secondsToEpoch(s) {
+        const gdt = new GlideDateTime('1970-01-01 00:00:00');
+        gdt.addSeconds(s);
+        return gdt;
+    }
+
+    /**
+     * Converts a Unix timestamp to seconds.
+     *
+     * @param {GlideDateTime} gdt the GlideDateTime
+     * @returns {number} the corresponding number of seconds
+     */
+    static _epochToSeconds(gdt) {
+        return new GlideDateTime(gdt).getNumericValue() / 1000;
+    }
+}
+
+if (typeof module === 'object') {
+    // export as class
+    module.exports = <%= it.className %>;
+} else {
+    // servicenow export
+    this.<%= it.className %> = <%= it.className %>;
+}
+
+// scroll guard
