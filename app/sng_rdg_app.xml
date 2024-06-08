@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-06-08 11:20:25">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<application_name>snRDG</application_name>
+<application_scope>x_890366_snrdg</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Generate Row Data Gateways for ServiceNow Tables</description>
+<inserted/>
+<name>snRDG 1.0.0</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date>2024-06-08 11:20:12</release_date>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>e2fc6c2797e606103264fcdfe153afef</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>8a1d646797e606103264fcdfe153af9f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_7e6cc55c978ace503264fcdfe153af99</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>true</can_edit_in_studio><enforce_license>none</enforce_license><guided_setup_guid/><hide_on_ui>false</hide_on_ui><ide_created/><installed_as_dependency>false</installed_as_dependency><js_level>es_latest</js_level><licensable>true</licensable><license/><license_category>none</license_category><license_definition/><license_model>none</license_model><logo/><menu/><name>snRDG</name><package_json/><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_890366_snrdg</scope><scoped_administration>false</scoped_administration><short_description>Generate Row Data Gateways for ServiceNow Tables</short_description><source>x_890366_snrdg</source><store_correlation_id/><store_url/><subscription_entitlement/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-04 14:45:37</sys_created_on><sys_id>7e6cc55c978ace503264fcdfe153af99</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-04 14:45:37</sys_updated_on><template/><trackable>true</trackable><uninstall_blocked>false</uninstall_blocked><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app><sys_translated_text action="delete_multiple" query="documentkey=7e6cc55c978ace503264fcdfe153af99"/></record_update>]]></payload>
+<payload_hash>1095554579</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>021d646797e606103264fcdfe153afa1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79393a40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>snRDG</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid>4f6cc55ccd8ace5005b99b55a1039f9d</update_guid>
+<update_guid_history>4f6cc55ccd8ace5005b99b55a1039f9d:-1480968039</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_bcfe567697aa42103264fcdfe153af16</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 11:42:24</sys_created_on><sys_id>bcfe567697aa42103264fcdfe153af16</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.update</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_bcfe567697aa42103264fcdfe153af16</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 11:42:24</sys_updated_on><target_name>GlideRecord.update</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-484270501</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>021d646797e606103264fcdfe153afa4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394210000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>GlideRecord.update</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>30fe567678aa421034b66f2998d85318</update_guid>
+<update_guid_history>30fe567678aa421034b66f2998d85318:-484270501</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_68b59bf297ae42103264fcdfe153af51</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 15:41:35</sys_created_on><sys_id>68b59bf297ae42103264fcdfe153af51</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_dictionary</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_68b59bf297ae42103264fcdfe153af51</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 15:41:35</sys_updated_on><target_name>sys_dictionary</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-1613768667</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>061d646797e606103264fcdfe153afa3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394820000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>sys_dictionary</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>e8b59bf21bae4210fd7314e94fc29c52</update_guid>
+<update_guid_history>e8b59bf21bae4210fd7314e94fc29c52:-1613768667</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_kmf_module_key_policy_69030366972a02103264fcdfe153af0d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_module_key_policy"><sys_kmf_module_key_policy action="INSERT_OR_UPDATE"><crypto_module display_value="global.com_snc_platform_security_api_auth_glideencrypter">26af26a4b7303110feda2181ce11a9d8</crypto_module><key_type display_value="Symmetric Key Encryption Key">ca005cf7c7103300af4d43c6f0976328</key_type><last_enforced>2024-06-05 19:41:32</last_enforced><result>reject</result><sys_class_name>sys_kmf_module_key_policy</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-05 19:41:32</sys_created_on><sys_id>69030366972a02103264fcdfe153af0d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_kmf_module_key_policy_69030366972a02103264fcdfe153af0d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-05 19:41:32</sys_updated_on></sys_kmf_module_key_policy></record_update>]]></payload>
+<payload_hash>1556675201</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>0a1d646797e606103264fcdfe153afa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79393f00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name/>
+<type>Crypto Module Key Policy</type>
+<update_domain>global</update_domain>
+<update_guid>2d030366fd2a0210e382722a1073c10e</update_guid>
+<update_guid_history>2d030366fd2a0210e382722a1073c10e:1556675201</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_77b0eef697aa42103264fcdfe153af5e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;Get Table Schema&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	SnRDGWS.getSchema(request, response);
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_890366_snrdg/table_schema/{table}&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/{table}&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-06 11:51:47&lt;/sys_created_on&gt;&lt;sys_id&gt;77b0eef697aa42103264fcdfe153af5e&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get Table Schema&lt;/sys_name&gt;&lt;sys_package display_value="snRDG" source="x_890366_snrdg"&gt;7e6cc55c978ace503264fcdfe153af99&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="snRDG"&gt;7e6cc55c978ace503264fcdfe153af99&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_77b0eef697aa42103264fcdfe153af5e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-06 12:35:33&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="snRDG Table Schema"&gt;49602ef697aa42103264fcdfe153af91&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1914909957</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>0a1d646797e606103264fcdfe153afa5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff793945e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>Get Table Schema</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>d71b2e3269ea4210410cc0bb7ed2e0fc</update_guid>
+<update_guid_history>d71b2e3269ea4210410cc0bb7ed2e0fc:1914909957,0534663e03aa42100d0352fa07269cac:208010469,5e11e23a33aa42100dcdc2feb271fae5:668702205</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_grid_canvas_pane_1089000f976282103264fcdfe153af7c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="DELETE"><grid_canvas display_value="PA Usage by Web API">d889000f976282103264fcdfe153af66</grid_canvas><height>10</height><portal_widget display_value="Created 22.01.2016 01:17:26">e764fbd29f811200ef4afa7dc67fcf6a</portal_widget><posx>0</posx><posy>40</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 19:27:57</sys_created_on><sys_id>1089000f976282103264fcdfe153af7c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>d889000f976282103264fcdfe153af66</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_grid_canvas_pane_1089000f976282103264fcdfe153af7c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 19:27:57</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+<payload_hash>-596159074</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>0e1d646797e606103264fcdfe153afa1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394b10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>d889000f976282103264fcdfe153af66</target_name>
+<type>Grid Canvas Pane</type>
+<update_domain>global</update_domain>
+<update_guid>c01cace373e606106e2c1ed0ceb0d14d</update_guid>
+<update_guid_history>c01cace373e606106e2c1ed0ceb0d14d:-596159074,1089000f676282107845646c3dad957d:-206115694</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_e7879b7697ae42103264fcdfe153afe9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="DELETE"><operation>read</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 15:49:43</sys_created_on><sys_id>e7879b7697ae42103264fcdfe153afe9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_e7879b7697ae42103264fcdfe153afe9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 15:49:43</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>1337732037</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>0e1d646797e606103264fcdfe153afa4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394f40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>incident</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>c5bc682703e606108e27fe733251e964</update_guid>
+<update_guid_history>c5bc682703e606108e27fe733251e964:1337732037,6b879b7625ae4210780d6d1db3a1fbea:1851940281</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_29b81bb697ae42103264fcdfe153af25</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 15:54:46</sys_created_on><sys_id>29b81bb697ae42103264fcdfe153af25</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.newRecord</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_29b81bb697ae42103264fcdfe153af25</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 15:54:46</sys_updated_on><target_name>GlideRecord.newRecord</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>489356961</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>421d646797e606103264fcdfe153afa3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff793948c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>GlideRecord.newRecord</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>a9b81bb6a5ae42101a54d53925331226</update_guid>
+<update_guid_history>a9b81bb6a5ae42101a54d53925331226:489356961</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_grid_canvas_pane_d089000f976282103264fcdfe153af7e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="DELETE"><grid_canvas display_value="PA Usage by Web API">d889000f976282103264fcdfe153af66</grid_canvas><height>10</height><portal_widget display_value="Created 22.01.2016 01:17:26">e364fbd29f811200ef4afa7dc67fcf6b</portal_widget><posx>0</posx><posy>50</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 19:27:57</sys_created_on><sys_id>d089000f976282103264fcdfe153af7e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>d889000f976282103264fcdfe153af66</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_grid_canvas_pane_d089000f976282103264fcdfe153af7e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 19:27:57</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+<payload_hash>190009026</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>461d646797e606103264fcdfe153afa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>d889000f976282103264fcdfe153af66</target_name>
+<type>Grid Canvas Pane</type>
+<update_domain>global</update_domain>
+<update_guid>069ca82741e6061014c87445496f3ad4</update_guid>
+<update_guid_history>069ca82741e6061014c87445496f3ad4:190009026,d089000fd06282100b072329947a997f:580052406</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_49602ef697aa42103264fcdfe153af91</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_890366_snrdg/table_schema</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>snRDG Table Schema</name><namespace>x_890366_snrdg</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>table_schema</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 11:49:31</sys_created_on><sys_id>49602ef697aa42103264fcdfe153af91</sys_id><sys_mod_count>1</sys_mod_count><sys_name>snRDG Table Schema</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_ws_definition_49602ef697aa42103264fcdfe153af91</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 12:11:20</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>1051180420</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>461d646797e606103264fcdfe153afa5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394510000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>snRDG Table Schema</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>a095a67ed1aa4210d0d93d5937d2a3d2</update_guid>
+<update_guid_history>a095a67ed1aa4210d0d93d5937d2a3d2:1051180420,c590eef6a2aa4210c0bac127ffb9d6c4:968869316</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_grid_canvas_d889000f976282103264fcdfe153af66</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas"><sys_grid_canvas action="DELETE"><legacy_page display_value="PA Usage by Web API">422437929f811200ef4afa7dc67fcfe7</legacy_page><name>PA Usage by Web API</name><sys_class_name>sys_grid_canvas</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 19:27:56</sys_created_on><sys_id>d889000f976282103264fcdfe153af66</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PA Usage by Web API</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_grid_canvas_d889000f976282103264fcdfe153af66</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 19:27:56</sys_updated_on></sys_grid_canvas></record_update>]]></payload>
+<payload_hash>1423585672</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>4a1d646797e606103264fcdfe153afa1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394e90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>PA Usage by Web API</target_name>
+<type>Grid Canvas</type>
+<update_domain>global</update_domain>
+<update_guid>4f9ca82791e60610d0699c22a367ac13</update_guid>
+<update_guid_history>4f9ca82791e60610d0699c22a367ac13:1423585672,5c89000f07628210f66ca076d168f068:-931030636</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_e04b008f976282103264fcdfe153af57</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 19:35:36</sys_created_on><sys_id>e04b008f976282103264fcdfe153af57</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ScopedGlideElement</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_e04b008f976282103264fcdfe153af57</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 19:35:36</sys_updated_on><target_name>ScopedGlideElement</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-1419644913</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>4a1d646797e606103264fcdfe153afa4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394a40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>ScopedGlideElement</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>204b008f4d62821076cbfa8c6978e059</update_guid>
+<update_guid_history>204b008f4d62821076cbfa8c6978e059:-1419644913</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_api_access_policy_ea9e8f2e97ea02103264fcdfe153af59</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_api_access_policy"><sys_api_access_policy action="DELETE"><active>true</active><api>Table API</api><api_path>now/table</api_path><api_resource/><apply_all>false</apply_all><apply_all_methods>true</apply_all_methods><apply_all_resources>true</apply_all_resources><apply_all_versions>true</apply_all_versions><apply_global>false</apply_global><http_method/><name>snRDG Table Access</name><sys_class_name>sys_api_access_policy</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-05 20:33:56</sys_created_on><sys_id>ea9e8f2e97ea02103264fcdfe153af59</sys_id><sys_mod_count>3</sys_mod_count><sys_name>snRDG Table Access</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_api_access_policy_ea9e8f2e97ea02103264fcdfe153af59</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 11:40:08</sys_updated_on><version/></sys_api_access_policy></record_update>]]></payload>
+<payload_hash>-1224423525</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>4e1d646797e606103264fcdfe153afa0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79395170000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>snRDG Table Access</target_name>
+<type>API Access Policies</type>
+<update_domain>global</update_domain>
+<update_guid>06cce06714e60610e099ee913326b24b</update_guid>
+<update_guid_history>06cce06714e60610e099ee913326b24b:-1224423525,8d7ed63622aa42103023ccaedcffa2da:1545265447,7e7d92f2beaa4210f39cbfbd34bb2b23:-1334572177,920fcb6e0fea021076fa24c0ec9ed757:1949101915</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_ac44a6fa97aa42103264fcdfe153afd9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 12:05:36</sys_created_on><sys_id>ac44a6fa97aa42103264fcdfe153afd9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>RESTAPIRequest</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_ac44a6fa97aa42103264fcdfe153afd9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 12:05:36</sys_updated_on><target_name>RESTAPIRequest</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-1513809461</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>4e1d646797e606103264fcdfe153afa3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394420000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>RESTAPIRequest</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>3844a6fad9aa4210c6a8c5052cbbd7db</update_guid>
+<update_guid_history>3844a6fad9aa4210c6a8c5052cbbd7db:-1513809461</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_grid_canvas_pane_d089000f976282103264fcdfe153af6a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="DELETE"><grid_canvas display_value="PA Usage by Web API">d889000f976282103264fcdfe153af66</grid_canvas><height>10</height><portal_widget display_value="Created 22.01.2016 01:17:26">6364fbd29f811200ef4afa7dc67fcf69</portal_widget><posx>0</posx><posy>0</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 19:27:57</sys_created_on><sys_id>d089000f976282103264fcdfe153af6a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>d889000f976282103264fcdfe153af66</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_grid_canvas_pane_d089000f976282103264fcdfe153af6a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 19:27:57</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+<payload_hash>968074495</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>821d646797e606103264fcdfe153afa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394d00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>d889000f976282103264fcdfe153af66</target_name>
+<type>Grid Canvas Pane</type>
+<update_domain>global</update_domain>
+<update_guid>159ca82728e60610760ab214475bee3b</update_guid>
+<update_guid_history>159ca82728e60610760ab214475bee3b:968074495,1889000f886282100a2a35c17b2bad78:426467211</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_a3f4a67e97aa42103264fcdfe153af4f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_890366_snrdg.SnRDGWS&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;This Script Include handles the REST calls that come via the API /api/x_890366_snrdg/table_schema/{table}.&amp;#13;
+See Scripted REST API "snRDG Table Schema".&amp;#13;
+ &lt;/description&gt;&lt;name&gt;SnRDGWS&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/**
+ * This Script Include handles the REST calls that come via the API /api/x_890366_snrdg/table_schema/{table}.
+ * See Scripted REST API "snRDG Table Schema".
+ */
+class SnRDGWS {
+
+    /**
+     * Converts the exception generated by ServiceNow into a string
+     * that can be parsed on the client.
+     *
+     * @param {any} ex exception object to serialize
+     * @returns {string} JSON string of exception object
+     */
+    static _serializeException(ex) {
+        const exObj = {};
+        Object.getOwnPropertyNames(ex).forEach((key) =&gt; {
+            exObj[key] = ex[key];
+        });
+        // rhinoException is a Java object, so we need to force string conversion
+        if ('rhinoException' in ex) {
+            exObj.rhinoException = String(ex.rhinoException);
+        }
+        return JSON.stringify(exObj);
+    }
+
+    /**
+     * Get the schema for a table.
+     * This includes the field name, type, label, default value, reference (where applicable),
+     * and choice list (if field is a choice field).
+     * 
+     * @param {string} table The table name
+     * @returns {object[]} The schema
+     */
+    static _getSchema(table) {
+        const tblHierarchy = new GlideTableHierarchy(table);
+        const tableNames = tblHierarchy.getTables();
+
+        const dictGr = new GlideRecord('sys_dictionary');
+        dictGr.addQuery('name', 'IN', tableNames);
+        dictGr.addQuery('internal_type', '!=', 'collection');
+        dictGr.addActiveQuery();
+        dictGr.query();
+
+        const fields = ['name', 'internal_type', 'column_label', 'element',
+            'default_value', 'reference', 'choice'
+        ];
+
+        const records = [];
+
+        while (dictGr.next()) {
+            const record = {};
+
+            fields.forEach((f) =&gt; {
+                record[f] = dictGr.getValue(f);
+            });
+
+            if (dictGr.getValue('choice') != '0') {
+                const grTarget = new GlideRecord(record.name);
+                grTarget.initialize();
+                record.choices = grTarget[record.element].getChoices();
+            }
+
+            records.push(record);
+        }
+
+        return records;
+    }
+
+
+    /**
+     * Get the schema for a table.
+     * 
+     * @param {RESTAPIRequest} request The incoming request
+     * @param {RESTAPIResponse} response The response 
+     * @modifies response
+     */
+    static getSchema(request, response) {
+        try {
+            const table = request.pathParams.table;
+            const schema = SnRDGWS._getSchema(table);
+            response.setBody(schema);
+        } catch (error) {
+            response.setStatus(500);
+            const errorStr = SnRDGWS._serializeException(error);
+            response.setBody(errorStr);
+        }
+    }
+
+    /** @type{String} */
+    type = 'SnRDGWS';
+}
+
+if (typeof module === 'object') {
+    // export as class
+    module.exports = SnRDGWS;
+} else {
+    // servicenow export
+    this.SnRDGWS = SnRDGWS;
+}
+
+// scroll guard]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-06 12:11:41&lt;/sys_created_on&gt;&lt;sys_id&gt;a3f4a67e97aa42103264fcdfe153af4f&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;SnRDGWS&lt;/sys_name&gt;&lt;sys_package display_value="snRDG" source="x_890366_snrdg"&gt;7e6cc55c978ace503264fcdfe153af99&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="snRDG"&gt;7e6cc55c978ace503264fcdfe153af99&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a3f4a67e97aa42103264fcdfe153af4f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-06 16:09:13&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>271427527</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>821d646797e606103264fcdfe153afa5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394990000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>SnRDGWS</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>110c5372dbae42103248495a5cb38c8c</update_guid>
+<update_guid_history>110c5372dbae42103248495a5cb38c8c:271427527,6dfb5f7a85ae421072aa6e5bfad40d24:-1642867315,b46b13f6c7ae42105338e95a2c61f40f:-206738086,2830fa3673ea4210248276ee5c9e3a5f:-135634967,2b3d6236dcea4210cf18a9efaedfce7b:1850564306,0eac2636b9ea4210aa03bfcd0762972b:1118630117,f8bb263656ea421026b424c42224b60c:1850564306,4f8ba67e4baa42102f9d4a8eda190371:-135634967,f44b6e323cea4210de79603bbbb6f307:-2108860506,65e72a3ea2aa42103e4770837dd36cb2:2139103292,8ea5667e60aa4210d5664cbe8fadb95f:1823547628</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_auth_profile_mapping_f79e43ea97ea02103264fcdfe153aff6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_mapping"><sys_auth_profile_mapping action="DELETE"><api_access_policy display_value="">ea9e8f2e97ea02103264fcdfe153af59</api_access_policy><inbound_auth_profile display_value="snRDG">3cb28366972a02103264fcdfe153af0f</inbound_auth_profile><sys_class_name>sys_auth_profile_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-05 20:33:10</sys_created_on><sys_id>f79e43ea97ea02103264fcdfe153aff6</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_auth_profile_mapping_f79e43ea97ea02103264fcdfe153aff6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-05 20:33:10</sys_updated_on></sys_auth_profile_mapping></record_update>]]></payload>
+<payload_hash>1482024499</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>861d646797e606103264fcdfe153afa1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79395080000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name/>
+<type>Inbound authentication profile</type>
+<update_domain>global</update_domain>
+<update_guid>7ccc60674fe60610857e4cf8b3e97006</update_guid>
+<update_guid_history>7ccc60674fe60610857e4cf8b3e97006:1482024499,63de476e2aea0210d8442adac7bbaae2:117156391</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_ddde927697aa42103264fcdfe153afdd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 11:41:53</sys_created_on><sys_id>ddde927697aa42103264fcdfe153afdd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_api_access_policy</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_ddde927697aa42103264fcdfe153afdd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 11:41:53</sys_updated_on><target_name>sys_api_access_policy</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>405536433</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>861d646797e606103264fcdfe153afa4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394160000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>sys_api_access_policy</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>5dde927602aa42102f152e498f5787df</update_guid>
+<update_guid_history>5dde927602aa42102f152e498f5787df:405536433</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_api_access_policy_719ed23697aa42103264fcdfe153af87</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_api_access_policy"><sys_api_access_policy action="INSERT_OR_UPDATE"><active>true</active><api>Table Schema</api><api_path>x_890366_snrdg/table_schema</api_path><api_resource/><apply_all>false</apply_all><apply_all_methods>true</apply_all_methods><apply_all_resources>true</apply_all_resources><apply_all_versions>true</apply_all_versions><apply_global>false</apply_global><http_method/><name>snRDG Schema</name><sys_class_name>sys_api_access_policy</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 11:40:50</sys_created_on><sys_id>719ed23697aa42103264fcdfe153af87</sys_id><sys_mod_count>4</sys_mod_count><sys_name>snRDG Schema</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_api_access_policy_719ed23697aa42103264fcdfe153af87</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 11:52:43</sys_updated_on><version/></sys_api_access_policy></record_update>]]></payload>
+<payload_hash>-1925624812</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>8a1d646797e606103264fcdfe153afa0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394380000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>snRDG Schema</target_name>
+<type>API Access Policies</type>
+<update_domain>global</update_domain>
+<update_guid>9551e27a84aa4210b0e226d740f191b6</update_guid>
+<update_guid_history>9551e27a84aa4210b0e226d740f191b6:-1925624812,274f9ab64faa42107e779ff1ab34e5cc:-1693423752,16fe12b67aaa4210ce81623258a236c4:1092369131,5f9e9276acaa42104b2e4a2bc35de6d8:901729673</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_a74beef297ea42103264fcdfe153afe4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 12:36:23</sys_created_on><sys_id>a74beef297ea42103264fcdfe153afe4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ScriptableServiceResultBuilder.setStatus</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_a74beef297ea42103264fcdfe153afe4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 12:36:23</sys_updated_on><target_name>ScriptableServiceResultBuilder.setStatus</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-511586635</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>8a1d646797e606103264fcdfe153afa3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff793946d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>ScriptableServiceResultBuilder.setStatus</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>2b4beef2afea4210e4494c3e2bb04ee5</update_guid>
+<update_guid_history>2b4beef2afea4210e4494c3e2bb04ee5:-511586635</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_cf0ca13e97a642103264fcdfe153af08</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Enable MariaDB INSTANT ALTER algorithms on the Now Platform</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>glide.db.instant_alter.enabled</name><read_roles/><suffix>glide.db.instant_alter.enabled</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 08:00:00</sys_created_on><sys_id>cf0ca13e97a642103264fcdfe153af08</sys_id><sys_mod_count>0</sys_mod_count><sys_name>glide.db.instant_alter.enabled</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_properties_cf0ca13e97a642103264fcdfe153af08</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 08:00:00</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=cf0ca13e97a642103264fcdfe153af08"/></record_update>]]></payload>
+<payload_hash>1263266424</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>8e1d646797e606103264fcdfe153afa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79393fd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>glide.db.instant_alter.enabled</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>d70ca13e48a64210e6aef1e16f343cba</update_guid>
+<update_guid_history>d70ca13e48a64210e6aef1e16f343cba:-2134107857</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_auth_profile_mapping_b9ae163697aa42103264fcdfe153af4b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_mapping"><sys_auth_profile_mapping action="INSERT_OR_UPDATE"><api_access_policy display_value="snRDG Schema">719ed23697aa42103264fcdfe153af87</api_access_policy><inbound_auth_profile display_value="snRDG">3cb28366972a02103264fcdfe153af0f</inbound_auth_profile><sys_class_name>sys_auth_profile_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 11:41:17</sys_created_on><sys_id>b9ae163697aa42103264fcdfe153af4b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_auth_profile_mapping_b9ae163697aa42103264fcdfe153af4b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 11:41:17</sys_updated_on></sys_auth_profile_mapping></record_update>]]></payload>
+<payload_hash>2033074967</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>c21d646797e606103264fcdfe153afa1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394080000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name/>
+<type>Inbound authentication profile</type>
+<update_domain>global</update_domain>
+<update_guid>69bed6766daa42104a8f8b84e74ba3ce</update_guid>
+<update_guid_history>69bed6766daa42104a8f8b84e74ba3ce:2033074967</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_c92557f2972e42103264fcdfe153af04</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 15:39:10</sys_created_on><sys_id>c92557f2972e42103264fcdfe153af04</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideTableHierarchy.getTables</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_c92557f2972e42103264fcdfe153af04</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 15:39:10</sys_updated_on><target_name>GlideTableHierarchy.getTables</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>2114126753</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>c21d646797e606103264fcdfe153afa4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394770000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>GlideTableHierarchy.getTables</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>4d2557f2092e42102a026b8e9b143805</update_guid>
+<update_guid_history>4d2557f2092e42102a026b8e9b143805:2114126753</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>oauth_entity_b31d01dc978ace503264fcdfe153af3c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><auth_code_lifespan>60</auth_code_lifespan><auth_url/><certificate_url/><client_id>731d01dc628ace505a5c9856dd8bbc3c</client_id><client_secret>﷞﷟﷒41a74ab3975431103264fcdfe153afa5﷬﷔1﷬﷭bwQoQ7efx4H29yMFlnJrTQ==Fjl7LWxz_l0U8BuwsOhCcCnEIdwxNOsE0vog-56u﷮﷯</client_secret><client_uuid>331d01dc978ace503264fcdfe153af3c</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>password</default_grant_type><id_token_lifespan>86400</id_token_lifespan><jwt_provider/><login_url/><logo_url/><message_signature_lifespan>60</message_signature_lifespan><mobile_client>false</mobile_client><name>snRDG</name><oauth_api_script/><protocol_name/><public_client>false</public_client><redirect_url>http://localhost:9876/callback</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt/><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sys_class_name>oauth_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-04 14:49:42</sys_created_on><sys_id>b31d01dc978ace503264fcdfe153af3c</sys_id><sys_mod_count>2</sys_mod_count><sys_name>snRDG</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>oauth_entity_b31d01dc978ace503264fcdfe153af3c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-05 15:40:46</sys_updated_on><token_url/><type>client</type><use_mutual_auth>false</use_mutual_auth><user/></oauth_entity></record_update>]]></payload>
+<payload_hash>-341184250</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>c61d646797e606103264fcdfe153afa0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79393bb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>snRDG</target_name>
+<type>Application Registries</type>
+<update_domain>global</update_domain>
+<update_guid>b2ebc66e5a66c21064b446d94f3c7ee9</update_guid>
+<update_guid_history>b2ebc66e5a66c21064b446d94f3c7ee9:-698531610,c6b40ea66a66c210cc0f35ca561461d6:993809879,cf5d459cd98ace501dd2fd016be4c9ac:406498956</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_7d21eaf297aa42103264fcdfe153afb5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 11:52:02</sys_created_on><sys_id>7d21eaf297aa42103264fcdfe153afb5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ScriptableServiceResultBuilder.setBody</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_7d21eaf297aa42103264fcdfe153afb5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 11:52:02</sys_updated_on><target_name>ScriptableServiceResultBuilder.setBody</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-912969515</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>c61d646797e606103264fcdfe153afa3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff793942b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>ScriptableServiceResultBuilder.setBody</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>fd21eaf2afaa42101b874694898af6b6</update_guid>
+<update_guid_history>fd21eaf2afaa42101b874694898af6b6:-912969515</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_kmf_module_key_policy_f0b28366972a02103264fcdfe153af11</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_module_key_policy"><sys_kmf_module_key_policy action="INSERT_OR_UPDATE"><crypto_module display_value="com_glide_record_glideencrypter">246bf8d15310311045bfddeeff7b12aa</crypto_module><key_type display_value="Symmetric Data Encryption Key">1c38f324c7003300af4d43c6f097636e</key_type><last_enforced>2024-06-05 19:40:06</last_enforced><result>reject</result><sys_class_name>sys_kmf_module_key_policy</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-05 19:40:06</sys_created_on><sys_id>f0b28366972a02103264fcdfe153af11</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_kmf_module_key_policy_f0b28366972a02103264fcdfe153af11</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-05 19:40:06</sys_updated_on></sys_kmf_module_key_policy></record_update>]]></payload>
+<payload_hash>-1874217133</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>ca1d646797e606103264fcdfe153afa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79393ce0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name/>
+<type>Crypto Module Key Policy</type>
+<update_domain>global</update_domain>
+<update_guid>38b28366462a0210adbe5df2d189151f</update_guid>
+<update_guid_history>38b28366462a0210adbe5df2d189151f:-1874217133</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>http_key_auth_3cb28366972a02103264fcdfe153af0f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="http_key_auth"><http_key_auth action="INSERT_OR_UPDATE"><active>true</active><auth_parameter>2af926dca3303110f96f5f87f31e6155</auth_parameter><auth_processor>false</auth_processor><description/><name>snRDG</name><sys_class_name>http_key_auth</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-05 19:40:46</sys_created_on><sys_id>3cb28366972a02103264fcdfe153af0f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>snRDG</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>http_key_auth_3cb28366972a02103264fcdfe153af0f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-05 19:40:46</sys_updated_on></http_key_auth></record_update>]]></payload>
+<payload_hash>1145863367</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>ce1d646797e606103264fcdfe153af9f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79393df0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>snRDG</target_name>
+<type>Http Authentication Profile Using API Ke</type>
+<update_domain>global</update_domain>
+<update_guid>92d28366492a02108348fc44f6649256</update_guid>
+<update_guid_history>92d28366492a02108348fc44f6649256:1145863367</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_grid_canvas_pane_5c89000f976282103264fcdfe153af79</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="DELETE"><grid_canvas display_value="PA Usage by Web API">d889000f976282103264fcdfe153af66</grid_canvas><height>10</height><portal_widget display_value="Created 22.01.2016 01:17:26">eb64fbd29f811200ef4afa7dc67fcf69</portal_widget><posx>0</posx><posy>30</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 19:27:57</sys_created_on><sys_id>5c89000f976282103264fcdfe153af79</sys_id><sys_mod_count>0</sys_mod_count><sys_name>d889000f976282103264fcdfe153af66</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_grid_canvas_pane_5c89000f976282103264fcdfe153af79</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 19:27:57</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+<payload_hash>-884354374</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>ce1d646797e606103264fcdfe153afa1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394c50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>d889000f976282103264fcdfe153af66</target_name>
+<type>Grid Canvas Pane</type>
+<update_domain>global</update_domain>
+<update_guid>fd3c602719e60610dcefebd08a5fe85f</update_guid>
+<update_guid_history>fd3c602719e60610dcefebd08a5fe85f:-884354374,5c89000f886282101575e110dcf43a7a:-494310994</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_e9645bbe976e42103264fcdfe153aff8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="DELETE"><operation>execute</operation><source_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 15:35:55</sys_created_on><sys_id>e9645bbe976e42103264fcdfe153aff8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecordUtil</sys_name><sys_package display_value="snRDG" source="x_890366_snrdg">7e6cc55c978ace503264fcdfe153af99</sys_package><sys_policy/><sys_scope display_value="snRDG">7e6cc55c978ace503264fcdfe153af99</sys_scope><sys_update_name>sys_scope_privilege_e9645bbe976e42103264fcdfe153aff8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 15:35:55</sys_updated_on><target_name>GlideRecordUtil</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_script_include</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>70302158</payload_hash>
+<remote_update_set display_value="snRDG 1.0.0">8a1d646797e606103264fcdfe153af9f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-06-08 11:20:24</sys_created_on>
+<sys_id>ce1d646797e606103264fcdfe153afa4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ff79394fe0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-06-08 11:20:24</sys_updated_on>
+<table/>
+<target_name>GlideRecordUtil</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>c2bcac27d1e606100e6f83c978e46338</update_guid>
+<update_guid_history>c2bcac27d1e606100e6f83c978e46338:70302158,6d645bbeab6e4210bac5c5ba8091a1fa:938622146</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
