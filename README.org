@@ -80,7 +80,7 @@ The project consists of three main parts:
 ** ServiceNow Application
 The ServiceNow application is responsible for compiling the metadata of the table and provides a REST API to access the schema information. It is secured via an API key[3].
 
-The installation can be installed using the provided update set XML. The source is also included in this GIT repository for convenience.
+The installation can be installed using the provided update set XML (directory "app"). The source is also included in this GIT repository for convenience.
 
 See directory /sys_script_include/.
 
