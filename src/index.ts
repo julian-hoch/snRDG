@@ -118,7 +118,7 @@ yargs(process.argv.slice(2))
         }
     )
     .command(
-	'generate <table> <className>',
+	'generate <table> <className> [template]',
 	'creates row data gateway class for a given ServiceNow table',
 	(yargs) => {
             yargs.positional(chalk.yellow('table'), {
@@ -131,10 +131,16 @@ yargs(process.argv.slice(2))
                 describe: 'name of the class',
                 demandOption: true,
             });
+	    yargs.positional(chalk.yellow('template'), {
+		type: 'string',
+		describe: 'template to use for class generation',
+		default: 'class_es5',
+	    });
         },
         async (argv) => {
             const tableName = argv.table as string;
             const className = argv.className as string;
+	    const template = argv.template as string;
 
 	    sp.add('snrdg-get-schema', {
 		text: `Retrieving table schema for ${argv.table}`,
@@ -161,7 +167,7 @@ yargs(process.argv.slice(2))
 		const rdgClass = new RowDataGateway(tableName, className, schema);
 
 		// generate class code from template
-		const code = await CodeGenerator.generateClass(rdgClass);
+		const code = await CodeGenerator.generateClass(rdgClass, template);
 		sp.succeed('snrdg-generate');
 
 		// output generated code to stdout 

@@ -1,6 +1,7 @@
 export type InternalType =
     | "GUID"
     | "boolean"
+    | "choice"
     | "conditions"
     | "decimal"
     | "document_id"

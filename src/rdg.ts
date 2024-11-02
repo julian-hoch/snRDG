@@ -58,19 +58,20 @@ export class RowDataGateway {
 
 	let jsType = "";
 	let valueGetter = '';
-	let valueSetter = `this.${column.name}`;
+	let valueSetter = `this.${column.element}`;
 
 	switch (column.internal_type) {
             case "reference":
 	    case "document_id":
             case "GUID":
 		jsType = "sys_id";
-		valueGetter = `gr['${column.name}'].toString()`;
+		valueGetter = `gr['${column.element}'].toString()`;
 		break;
             case "boolean":
 		jsType = "boolean";
-		valueGetter = `Boolean(gr['${column.name}'])`;
+		valueGetter = `Boolean(gr['${column.element}'])`;
 		break;
+            case "choice":
             case "string":
             case "field_name":
             case "glide_list":
@@ -86,35 +87,35 @@ export class RowDataGateway {
             case "expression":
             case "script":
 		jsType = "string";
-		valueGetter = `gr['${column.name}'].toString()`;
+		valueGetter = `gr['${column.element}'].toString()`;
 		break;
 	    case "timer":
             case "glide_date_time":
             case "due_date":
 		jsType = "GlideDateTime";
-		valueGetter = `new GlideDateTime(gr['${column.name}'])`;
+		valueGetter = `new GlideDateTime(gr['${column.element}'])`;
 		break;
             case "integer":
             case "decimal":
 		jsType = "number";
-		valueGetter = `Number(gr['${column.name}'])`;
+		valueGetter = `Number(gr['${column.element}'])`;
 		break;
             case "table_name":
             case "sys_class_name":
 		jsType = "InstanceTableNames";
-		valueGetter = `gr['${column.name}'].toString()`;
+		valueGetter = `gr['${column.element}'].toString()`;
 		break;
             case "conditions":
 		jsType = "encoded_query";
-		valueGetter = `gr['${column.name}'].toString()`;
+		valueGetter = `gr['${column.element}'].toString()`;
 		break;
             case "glide_duration":
 		jsType = "number";
-		valueGetter = `this.constructor._epochToSeconds(gr['${column.name}'])`;
-		valueSetter = `this.constructor._secondsToEpoch(this.${column.name})`;
+		valueGetter = `this.constructor._epochToSeconds(gr['${column.element}'])`;
+		valueSetter = `this.constructor._secondsToEpoch(this.${column.element})`;
 		break;
             default:
-		throw new Error(`Unknown type '${column.internal_type}' of column '${column.name}'`);
+		throw new Error(`Unknown type '${column.internal_type}' of column '${column.element}'`);
 	}
 
 	return {
@@ -132,9 +133,13 @@ export class RowDataGateway {
      * @returns the camelized string
      */
     private camelize(str: string): string {
-	return str.trim().replace(/[_\s]+(\w)?/g, (_, char) => char ? char.toUpperCase() : '')
+	const label = str.trim().replace(/[_\s]+(\w)?/g, (_, char) => char ? char.toUpperCase() : '')
             .replace(/^[a-z]/, (char) => char.toUpperCase())
-            .replace(/(\s+[a-z])/g, (match) => match.toUpperCase());
+            .replace(/(\s+[a-z])/g, (match) => match.toUpperCase())
+            .replace(/[^a-zA-Z0-9]/g, '');
+
+        // make sure label does not start with number
+        return label.replace(/^[0-9]/, '_$&');
     }
 
     /**

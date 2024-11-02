@@ -19,18 +19,17 @@ class CodeGenerator {
     /**
      * Given a table description, generate a class (ES6 javascript class).
      * 
-     * @param tableName the name of the table
-     * @param className name of the class
-     * @param metaData object containing the servicenow metadata of a table
+     * @param rdg RowDataGateway object containing the metadata of a table
+     * @param template base name (without extension) of the template to use
      * @returns the source code of the class
      */
-    static async generateClass(rdg: RowDataGateway): Promise<string> {
+     static async generateClass(rdg: RowDataGateway, template: string): Promise<string> {
 	eta.configure({
             views: path.resolve('templates'),
             autoEscape: false
 	});
 
-	const res = await eta.renderFile('./class_template', {
+	const res = await eta.renderFile(template, {
             tableName: rdg.tableName,
             className: rdg.className,
             columns: rdg.fields,

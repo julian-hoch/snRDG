@@ -23,17 +23,19 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
 
 3. Configure environment variables:
    Create a `.env` file in the root of your project and add the following variables:
+
    #+begin_src sh
    SNRDG_INSTANCE=<your_instance_name>
    SNRDG_API_KEY=<your_api_key>
    #+end_src
+
    Replace `<your_instance_name>` with the name of your ServiceNow instance and `<your_api_key>` with your API key.
 
 4. Install the ServiceNow application:
    Import the provided update set XML into your ServiceNow instance.
 
 5. Configure API Key
-Create an API key in your ServiceNow instance and assign it to the REST API[2].
+   Create an API key in your ServiceNow instance and assign it to the REST API[2].
 
 * Usage
 
@@ -61,18 +63,28 @@ Replace `<table_name>` with the name of your ServiceNow table.
 Generate a Row Data Gateway class for a given ServiceNow table.
 
 #+begin_src sh
-snrdg generate <table_name> <class_name>
+snrdg generate <table_name> <class_name> [template]
 #+end_src
 
 Replace `<table_name>` with the name of your ServiceNow table and `<class_name>` with the desired name for the generated class.
+
+The "template" parameter is optional.  By default, a ES5 JavaScript class will be generated.  There is also a template for an ES6 class available.  You can use that with the template "class_es6".
 
 * Example
 Here's an example of how to use the commands:
 #+begin_src sh
 snrdg test
 snrdg schema incident
-snrdg generate incident IncidentGateway
+snrdg generate incident IncidentRDG
 #+end_src
+
+Or, to get an ES6 class, and to directly store it in a file (adjust the path to your needs):
+
+#+begin_src sh
+snrdg generate incident IncidentRDG ./templates/class_es6 > ./IncidentRDG.js
+#+end_src
+
+You can then upload the generated class to your ServiceNow instance and save it as a Script Include to use it in your scripts.
 
 * Architecture
 The project consists of three main parts:
@@ -82,13 +94,13 @@ The ServiceNow application is responsible for compiling the metadata of the tabl
 
 The installation can be installed using the provided update set XML (directory "app"). The source is also included in this GIT repository for convenience.
 
-See directory /sys_script_include/.
+See directory =sys_script_include=.
 
 ** Client
 The client provides a simple CLI to query the instance and generate classes based on the table schema. The client is written in TypeScript and uses the Axios library for HTTP requests. To generate the class, the client uses the Eta template engine.
 
-** Template
-The template for generating the classes is located in the =/templates= directory. The Eta template engine uses this template to generate the ES6 JavaScript class code based on the table schema. Feel free to adjust it to your own needs.
+** Templates
+The templates for generating the classes are located in the =/templates= directory. The Eta template engine uses these templates to generate the JavaScript class code based on the table schema.  Feel free to adjust the templates to your own needs, or to add new templates.
 
 * Contributing
 Feel free to submit issues or pull requests. Any help is greatly appreciated!

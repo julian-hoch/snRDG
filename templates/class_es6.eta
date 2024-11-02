@@ -1,11 +1,4 @@
 /* eslint-disable global-require, dot-notation */
-if (typeof require === 'function') {
-    const GlideRecord = require('../../../tests/jest/__stubs__/GlideRecord');
-    const GlideDateTime = require('../../../tests/jest/__stubs__/GlideDateTime');
-    globalThis.GlideRecord = GlideRecord; /* global GlideRecord */
-    globalThis.GlideDateTime = GlideDateTime; /* global GlideDateTime */
-}
-
 <% it.choiceTypes.forEach(function(ct) {%>
 /** 
  * @typedef { <%= ct.choicesQuoted.join(' | ') %> } <%= ct.choiceLabel %> 
@@ -78,7 +71,7 @@ class <%= it.className %> {
     static tableName = '<%= it.tableName %>';
 
     /**
-     * By default, an active record constructor simply
+     * By default, the constructor simply
      * reads out the fields from a given GlideRecord
      * and assigns them to the instance properties.
      *
@@ -237,6 +230,21 @@ class <%= it.className %> {
     //
 
     /**
+     * Inserts or updates the record in the database.
+     * If the record is already stored in the database,
+     * it will be updated, otherwise inserted.
+     *
+     * @returns {<%= it.className %>} the instance itself
+     */
+    insertOrUpdate() {
+        if (this._gr?.isValidRecord()) {
+            return this.update();
+        }
+
+        return this.insert();
+    }
+
+    /**
      * Inserts the record into the database.
      * If the record is already stored in the database,
      * an error will be thrown (if this is needed, use
@@ -338,12 +346,6 @@ gr['<%= col.element %>'] = <%= col.valueSetter %>;
     }
 }
 
-if (typeof module === 'object') {
-    // export as class
-    module.exports = <%= it.className %>;
-} else {
-    // servicenow export
-    this.<%= it.className %> = <%= it.className %>;
-}
+this.<%= it.className %> = <%= it.className %>;
 
 // scroll guard

@@ -7,7 +7,7 @@
         "build": "npx tsc"
     },
     "bin": {
-        "snrdg": "bin/snrdg"
+        "snrdg": "bin/index.js"
     },
     "repository": {
         "type": "git",
