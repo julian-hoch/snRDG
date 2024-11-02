@@ -22,6 +22,7 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
    #+end_src
 
 3. Configure environment variables:
+
    Create a `.env` file in the root of your project and add the following variables:
 
    #+begin_src sh
@@ -32,9 +33,11 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
    Replace `<your_instance_name>` with the name of your ServiceNow instance and `<your_api_key>` with your API key.
 
 4. Install the ServiceNow application:
+
    Import the provided update set XML into your ServiceNow instance.
 
 5. Configure API Key
+
    Create an API key in your ServiceNow instance and assign it to the REST API[2].
 
 * Usage
