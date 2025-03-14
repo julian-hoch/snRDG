@@ -92,6 +92,29 @@ class <%= it.className %> {
 <%}); %>
     }
 
+    /**
+     * Returns the GlideRecord instance for this record.
+     * If the record is not yet loaded, it will be loaded.
+     *
+     * @returns {GlideRecord} the GlideRecord instance
+     */
+    gr() {
+        if (this._gr?.isValidRecord()) {
+            return this._gr;
+        }
+
+        if (this.sys_id) {
+            this._gr = new GlideRecord(this.constructor.tableName);
+            if (!this._gr.get(this.sys_id)) {
+                throw new Error('<%= it.className %>.gr(): Could not load record with sys_id ' + this.sys_id);
+            }
+        } else {
+            throw new Error('<%= it.className %>.gr(): No sys_id set');
+        }
+
+        return this._gr;
+    }
+
     //
     // Getter (single record)
     //
@@ -175,6 +198,7 @@ class <%= it.className %> {
     /**
      * Generic retrieval of records based on a query. Will
      * return all matching records as array.
+     * The returned records will NOT have _gr set.
      * 
      * @param {encoded_query} query additional query to filter the result
      * @returns {<%= it.className %>[]} all matching records
@@ -188,6 +212,7 @@ class <%= it.className %> {
 
         while (gr.next()) {
             const instance = new this(gr);
+            instance._gr = null;
             result.push(instance);
         }
 
@@ -199,6 +224,7 @@ class <%= it.className %> {
 /**
      * Generic retrieval of records based on a query. Will
      * return all records as array.
+     * The returned records will NOT have _gr set.
      * 
      * @param {<%= col.jsType %>} value lookup value for <%= col.name %> 
      * @param {encoded_query?} [query] additional query to filter the result
@@ -216,6 +242,7 @@ class <%= it.className %> {
 
         while (gr.next()) {
             const instance = new this(gr);
+            instance._gr = null;
             result.push(instance);
         }
 
@@ -237,7 +264,7 @@ class <%= it.className %> {
      * @returns {<%= it.className %>} the instance itself
      */
     insertOrUpdate() {
-        if (this._gr?.isValidRecord()) {
+        if (this.gr()?.isValidRecord()) {
             return this.update();
         }
 
@@ -253,7 +280,7 @@ class <%= it.className %> {
      * @returns {<%= it.className %>} the instance itself
      */
     insert() {
-        if (this._gr?.isValidRecord()) {
+        if (this.gr()?.isValidRecord()) {
             throw new Error('Cannot insert: already stored in database');
         }
 
@@ -284,7 +311,7 @@ gr['<%= col.element %>'] = <%= col.valueSetter %>;
      * @returns {<%= it.className %>} the instance itself
      */
     update(reason) {
-        if (!this._gr?.isValidRecord()) {
+        if (!this.gr()?.isValidRecord()) {
             throw new Error('<%= it.className %>.update(): record not stored in database');
         }
 
@@ -312,7 +339,7 @@ gr['<%= col.element %>'] = <%= col.valueSetter %>;
      * @returns {boolean} whether the deletion  was successful
      */
     deleteRecord() {
-        if (!this._gr?.isValidRecord()) {
+        if (!this.gr().isValidRecord()) {
             throw new Error('<%= it.className %>.delete(): record not stored in database');
         }
 
