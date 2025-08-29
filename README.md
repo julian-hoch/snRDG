@@ -1,18 +1,18 @@
 # Table of Contents
 
-1.  [Prerequisites](#org6a2cb6d)
-2.  [Installation](#org7096910)
-3.  [Usage](#orgf3f9c5e)
-4.  [Example](#orge2379f0)
-5.  [Architecture](#org687249c)
-6.  [Contributing](#org022226f)
-7.  [License](#org68aadca)
-8.  [Authors](#org2160a41)
+1.  [Prerequisites](#org6200484)
+2.  [Installation](#org815829e)
+3.  [Usage](#org7d70731)
+4.  [Example](#org07c9af9)
+5.  [Architecture](#orgeb4b960)
+6.  [Contributing](#org8404be3)
+7.  [License](#org28e076c)
+8.  [Authors](#orgdf4657c)
 
 Generate Row Data Gateways[1] for ServiceNow Tables.
 
 
-<a id="org6a2cb6d"></a>
+<a id="org6200484"></a>
 
 # Prerequisites
 
@@ -22,7 +22,7 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
 -   API key for the ServiceNow instance
 
 
-<a id="org7096910"></a>
+<a id="org815829e"></a>
 
 # Installation
 
@@ -47,9 +47,9 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
     SNRDG_API_KEY=<your_api_key>
     ```
     
-    Replace \`<your<sub>instance</sub><sub>name</sub>>\` with the name of your ServiceNow instance and \`<your<sub>api</sub><sub>key</sub>>\` with your API key.
+    Replace \`<your\_instance\_name>\` with the name of your ServiceNow instance and \`<your\_api\_key>\` with your API key.
     
-    **NOTE**: To create an API key, navigate to "System Web Services >> API Access Policies >> REST API Key" (or go directly to table "api<sub>key</sub>") in your ServiceNow instance and create a new key. If you do not have this option, you might have to activate the plugin "API Key and HMAC Authentication" (com.glide.tokenbased<sub>auth</sub>).
+    **NOTE**: To create an API key, navigate to "System Web Services >> API Access Policies >> REST API Key" (or go directly to table "api\_key") in your ServiceNow instance and create a new key. If you do not have this option, you might have to activate the plugin "API Key and HMAC Authentication" (com.glide.tokenbased\_auth).
 
 4.  Install the ServiceNow application:
     
@@ -60,7 +60,7 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
     Create an API key in your ServiceNow instance and assign it to the REST API[2].
 
 
-<a id="orgf3f9c5e"></a>
+<a id="org7d70731"></a>
 
 # Usage
 
@@ -86,7 +86,7 @@ Retrieve the schema of a specific table in JSON format.
 snrdg schema <table_name>
 ```
 
-Replace \`<table<sub>name</sub>>\` with the name of your ServiceNow table.
+Replace \`<table\_name>\` with the name of your ServiceNow table.
 
 
 ## Generate Row Data Gateway Class
@@ -97,12 +97,12 @@ Generate a Row Data Gateway class for a given ServiceNow table.
 snrdg generate <table_name> <class_name> [template]
 ```
 
-Replace \`<table<sub>name</sub>>\` with the name of your ServiceNow table and \`<class<sub>name</sub>>\` with the desired name for the generated class.
+Replace \`<table\_name>\` with the name of your ServiceNow table and \`<class\_name>\` with the desired name for the generated class.
 
-The "template" parameter is optional. By default, a ES5 JavaScript class will be generated. There is also a template for an ES6 class available. You can use that with the template "class<sub>es6</sub>".
+The "template" parameter is optional. By default, a ES5 JavaScript class will be generated. There is also a template for an ES6 class available. You can use that with the template "class\_es6".
 
 
-<a id="orge2379f0"></a>
+<a id="org07c9af9"></a>
 
 # Example
 
@@ -123,7 +123,7 @@ snrdg generate incident IncidentRDG ./templates/class_es6 > ./IncidentRDG.js
 You can then upload the generated class to your ServiceNow instance and save it as a Script Include to use it in your scripts.
 
 
-<a id="org687249c"></a>
+<a id="orgeb4b960"></a>
 
 # Architecture
 
@@ -149,21 +149,21 @@ The client provides a simple CLI to query the instance and generate classes base
 The templates for generating the classes are located in the `/templates` directory. The Eta template engine uses these templates to generate the JavaScript class code based on the table schema. Feel free to adjust the templates to your own needs, or to add new templates.
 
 
-<a id="org022226f"></a>
+<a id="org8404be3"></a>
 
 # Contributing
 
 Feel free to submit issues or pull requests. Any help is greatly appreciated!
 
 
-<a id="org68aadca"></a>
+<a id="org28e076c"></a>
 
 # License
 
 This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
 
 
-<a id="org2160a41"></a>
+<a id="orgdf4657c"></a>
 
 # Authors
 
