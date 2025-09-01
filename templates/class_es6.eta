@@ -103,13 +103,11 @@ class <%= it.className %> {
             return this._gr;
         }
 
-        if (this.sys_id) {
+        if (this.sys_id && this.sys_id != -1) {
             this._gr = new GlideRecord(this.constructor.tableName);
             if (!this._gr.get(this.sys_id)) {
                 throw new Error('<%= it.className %>.gr(): Could not load record with sys_id ' + this.sys_id);
             }
-        } else {
-            throw new Error('<%= it.className %>.gr(): No sys_id set');
         }
 
         return this._gr;
