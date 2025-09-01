@@ -61,16 +61,25 @@ yargs(process.argv.slice(2))
         type: 'boolean',
         description: 'Enable debug output',
     })
+    .option('silent', {
+        alias: 's',
+        type: 'boolean',
+        description: 'Silent mode, minimal output',
+    })
     .check((argv) => {
         if (argv.debug) {
             console.debug = (...args: unknown[]) => console.log(chalk.blueBright('DEBUG:'), ...args);
             console.debug('Debug output enabled');
         }
+        if (argv.silent) {
+            sp.add = () => void 0;
+            sp.succeed = () => void 0;
+            sp.fail = () => void 0;
+        }
         return true;
     })
     .command('test', 'Test access to instance', ()  => undefined, async () => {
 	console.debug('Testing access to instance');
-
 
 	sp.add('snrdg-test', {
 	    text: 'Testing access to instance',
