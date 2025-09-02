@@ -1,19 +1,19 @@
 # Table of Contents
 
-1.  [Prerequisites](#orgdf3e79f)
-2.  [Installation](#org917902d)
-3.  [Usage](#org2b37fc8)
-4.  [Example](#orga7f49d9)
-5.  [Using Emacs](#orgbda74d3)
-6.  [Architecture](#orgc637806)
-7.  [Contributing](#orgc5ea605)
-8.  [License](#org374e99a)
-9.  [Authors](#orgdceeab7)
+1.  [Prerequisites](#org17ad052)
+2.  [Installation](#orge0061d2)
+3.  [Usage](#orgdffe8d3)
+4.  [Example](#orgc3b12b9)
+5.  [Using Emacs](#org76a5484)
+6.  [Architecture](#orgbbc0140)
+7.  [Contributing](#org875491b)
+8.  [License](#org3577ab4)
+9.  [Authors](#org3aae6bd)
 
 Generate Row Data Gateways[1] for ServiceNow Tables.
 
 
-<a id="orgdf3e79f"></a>
+<a id="org17ad052"></a>
 
 # Prerequisites
 
@@ -23,7 +23,7 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
 -   API key for the ServiceNow instance
 
 
-<a id="org917902d"></a>
+<a id="orge0061d2"></a>
 
 # Installation
 
@@ -61,7 +61,7 @@ Generate Row Data Gateways[1] for ServiceNow Tables.
     Create an API key in your ServiceNow instance and assign it to the REST API[2].
 
 
-<a id="org2b37fc8"></a>
+<a id="orgdffe8d3"></a>
 
 # Usage
 
@@ -103,7 +103,7 @@ Replace \`<table\_name>\` with the name of your ServiceNow table and \`<class\_n
 The "template" parameter is optional. By default, a ES5 JavaScript class will be generated. There is also a template for an ES6 class available. You can use that with the template "class\_es6".
 
 
-<a id="orga7f49d9"></a>
+<a id="orgc3b12b9"></a>
 
 # Example
 
@@ -124,16 +124,18 @@ snrdg generate incident IncidentRDG ./templates/class_es6 > ./IncidentRDG.js
 You can then upload the generated class to your ServiceNow instance and save it as a Script Include to use it in your scripts.
 
 
-<a id="orgbda74d3"></a>
+<a id="org76a5484"></a>
 
 # Using Emacs
 
 If you are already using [snSYNC](https://github.com/julian-hoch/snSYNC), you can easily integrate snRDG into your workflow. Instead of manually handling the CLI, you can let Emacs do the work for you. Just open the Script Include buffer you want to regenerate, and run the command `snrdg-generate`. This will automatically generate the class and update the buffer (you still need to save it manually).
 
+You can also generate an entirely new Script Include using the command `snrdg-generate`. This will generate the class and open the code in a new temporary buffer. You can then save it as a new Script Include in your instance.
+
 For this to work, you should create a \`.env\` file in the base directory of snSYNC (where the `snrdg` command is available) with your API key as described above. You should also place the templates there in subdirectory named "templates". If you want, you can also create a symlink to the templates directory in the git repository, so you always have the latest version.
 
 
-<a id="orgc637806"></a>
+<a id="orgbbc0140"></a>
 
 # Architecture
 
@@ -159,21 +161,21 @@ The client provides a simple CLI to query the instance and generate classes base
 The templates for generating the classes are located in the `/templates` directory. The Eta template engine uses these templates to generate the JavaScript class code based on the table schema. Feel free to adjust the templates to your own needs, or to add new templates.
 
 
-<a id="orgc5ea605"></a>
+<a id="org875491b"></a>
 
 # Contributing
 
 Feel free to submit issues or pull requests. Any help is greatly appreciated!
 
 
-<a id="org374e99a"></a>
+<a id="org3577ab4"></a>
 
 # License
 
 This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
 
 
-<a id="orgdceeab7"></a>
+<a id="org3aae6bd"></a>
 
 # Authors
 

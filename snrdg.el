@@ -44,6 +44,11 @@
   :type 'string
   :group 'snrdg)
 
+(defcustom snrdg-mode #'js-mode
+  "Major mode to use for displaying generated RDG code."
+  :type 'function
+  :group 'snrdg)
+
 ;;; CLI integration and testing
 
 (defun snrdg--run (args)
@@ -51,7 +56,8 @@
   (interactive "sArguments: ")
   (require 'snsync)
   (with-current-buffer (get-buffer-create snrdg-temp-buffer)
-    (erase-buffer))
+    (erase-buffer)
+    (funcall snrdg-mode))
   (let* ((default-directory snsync-base-dir)
          (result (apply 'call-process "snrdg" nil "*snrdg-temp*" t (split-string args))))
     (if (eq result 0)
@@ -100,6 +106,21 @@
   (unless (re-search-forward "table schema of the table '\\([a-zA-Z0-9_]+\\)'" nil t)
     (error "Could not find table name in buffer"))
   (substring-no-properties (match-string 1)))
+
+(defun snrdg--guess-class-name (table)
+  "Guess the class name from TABLE.  Will convert to CamelCase and apply RDG suffix."
+  (let* ((parts (split-string table "_"))
+         (camelCase (mapconcat 'capitalize parts "")))
+    (concat camelCase "RDG")))
+
+;;;###autoload
+(defun snrdg-generate (table &optional className template)
+  "Generate the RDG code for TABLE.  Will guess CLASSNAME from TABLE if not provided."
+  (interactive "sTable name: \nsClass name (optional): ")
+  (let* ((className (or className (snrdg--guess-class-name table)))
+         (template (or template snrdg-template)))
+    (snrdg--generate table className template)
+    (switch-to-buffer snrdg-temp-buffer)))
 
 ;;;###autoload
 (defun snrdg-regenerate ()
